@@ -1,5 +1,5 @@
 {
-  "name": "some-api-generator",
+  "name": "rba",
   "version": "1.0.0",
   "description": "Create Resource Based APIs.",
   "main": "index.js",
