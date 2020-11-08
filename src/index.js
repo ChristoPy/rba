@@ -1,14 +1,16 @@
 const resourceBuilder = require('./resource/builder')
-const resources = require('./resources.json')
-const fastify = require('fastify')({
-  logger: true,
-})
+const fastify = require('fastify')
 
-resourceBuilder(resources, fastify)
+const start = (resources, port, serverOptions = {}) => {
+  const server = fastify(serverOptions)
 
-fastify.listen(3000, '0.0.0.0', (error) => {
-  if (error) {
-    fastify.log.error(error)
-    process.exit(1)
-  }
-})
+  resourceBuilder(resources, server)
+  server.listen(port, '0.0.0.0', (error) => {
+    if (error) {
+      fastify.log.error(error)
+      process.exit(1)
+    }
+  })
+}
+
+module.exports = start
