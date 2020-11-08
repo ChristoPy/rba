@@ -1,0 +1,23 @@
+{
+  "name": "some-api-generator",
+  "version": "1.0.0",
+  "description": "Create Resource Based APIs.",
+  "main": "index.js",
+  "dependencies": {
+    "fastify": "^3.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "scripts": {
+    "start": "node src",
+    "dev": "nodemon src"
+  },
+  "keywords": [],
+  "author": "Christopher Ribeiro <christo_campiglia@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ChristoPy/rba/issues"
+  },
+  "homepage": "https://github.com/ChristoPy/rba#readme"
+}
