@@ -5,6 +5,10 @@ const defineWichToValidate = (type) => {
     PUT: 'body',
   }
 
+  if (!baseDefinitions[type]) {
+    throw new Error(`Sorry, a request of type '${type}' is not supported yet.`)
+  }
+
   return baseDefinitions[type]
 }
 
