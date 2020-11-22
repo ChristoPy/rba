@@ -4,7 +4,8 @@
   "description": "Create Resource Based APIs.",
   "main": "index.js",
   "dependencies": {
-    "fastify": "^3.7.0"
+    "fastify": "^3.7.0",
+    "node-fetch": "^2.6.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.6"
@@ -13,7 +14,13 @@
     "start": "node src",
     "dev": "nodemon src"
   },
-  "keywords": [],
+  "keywords": [
+    "rba",
+    "API",
+    "service",
+    "services",
+    "gateway"
+  ],
   "author": "Christopher Ribeiro <christo_campiglia@hotmail.com>",
   "license": "MIT",
   "bugs": {
