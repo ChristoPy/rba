@@ -1,0 +1,17 @@
+{
+  "create-user": {
+    "method": "POST",
+    "path": "user",
+    "description": "Creates a user via the received data.",
+    "resides": "https://jsonbox.io/box_aea54bd1c94a2ad9a8ee",
+    "receives": {
+      "type": "object",
+      "required": ["name", "email", "password"],
+      "properties": {
+        "name": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "password": { "type": "string" }
+      }
+    }
+  }
+}
