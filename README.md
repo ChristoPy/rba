@@ -23,4 +23,4 @@ RBA(resources, 3000, {
 [ ] Add more examples  
 [ ] Support multiple types of requests
 
-## Version: 1.0.0
+## Version: 1.0.1
