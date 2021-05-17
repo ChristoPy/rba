@@ -5,6 +5,8 @@ const defineWichToValidate = (type) => {
     GET: 'params',
     POST: 'body',
     PUT: 'body',
+    PATCH: 'body',
+    DELETE: 'params'
   }
 
   if (!baseDefinitions[type]) {
